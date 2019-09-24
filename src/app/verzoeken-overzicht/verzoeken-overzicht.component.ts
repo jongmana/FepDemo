@@ -14,6 +14,18 @@ export class VerzoekenOverzichtComponent implements OnInit, OnDestroy {
 
   constructor(private verzoekenService: VerzoekenService) {
 
+  }
+
+  ngOnInit() {
+    this.verzoeken = this.verzoekenService.getAllVerzoeken(); // initiele vulling van de list van verzoeken
+
+    this.verzoekenAbo = this.verzoekenService.verzoekenUpdate.subscribe(
+      (verzoeken: Verzoek[]) => {
+        this.verzoeken = verzoeken;
+      }
+    );
+
+
     // simulatie dat er elders in de app een nieuw verzoek was ingediend.
     this.verzoekenService.addVerzoek(
       new Verzoek(
@@ -26,18 +38,6 @@ export class VerzoekenOverzichtComponent implements OnInit, OnDestroy {
         'was vergeten me in te schrijven'
       )
     );
-
-  }
-
-  ngOnInit() {
-    this.verzoeken = this.verzoekenService.getAllVerzoeken(); // initiele vulling van de list van verzoeken
-
-    this.verzoekenAbo = this.verzoekenService.verzoekenUpdate.subscribe(
-      (verzoeken: Verzoek[]) => {
-        this.verzoeken = verzoeken;
-      }
-    )
-
   }
 
   ngOnDestroy() {
