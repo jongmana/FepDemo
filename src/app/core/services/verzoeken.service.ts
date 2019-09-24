@@ -11,17 +11,25 @@ export class VerzoekenService {
     this.verzoeken.push(
       new Verzoek(
         123,
-        "Pietje",
-        "Puk",
-        "pietje.puk@student.hu.nl",
-        "TCIT-VKFEP",
-        "Front-End Programming",
-        "snapte er niks van"
+        'Pietje',
+        'Puk',
+        'pietje.puk@student.hu.nl',
+        'TCIT-VKFEP',
+        'Front-End Programming',
+        'snapte er niks van'
       )
     );
   }
 
   getAllVerzoeken() {
-    return this.verzoeken;
+    // de array is private, en dus wil je niet een referentie naar de array
+    // maar de inhoud (een kopie) van de array teruggeven om te voorkomen
+    // dat de array buiten de scope van deze klasse bewerkt wordt.
+    return this.verzoeken.slice();
+  }
+
+  addVerzoek(verzoek: Verzoek) {
+    this.verzoeken.push(verzoek);
+    console.log(this.verzoeken);
   }
 }

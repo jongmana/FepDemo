@@ -1,0 +1,8 @@
+table {
+    width: 100%;
+    border: 1px solid blue;
+}
+
+tbody td {
+    text-align: center;
+}

@@ -1,9 +1,27 @@
 <h1>Overzicht van de verzoeken</h1>
 
 <table>
-    <tr *ngFor="let verzoek of verzoeken">
-        <td>{{verzoek.studentnr}}</td>
-        <td>{{verzoek.voornaam}}</td>
-        <td>{{verzoek.achternaam}}</td>
+  <caption>Verzoeken Overzicht</caption>
+  <thead>
+    <tr>
+      <th scope="col">Studentnr</th>
+      <th scope="col">Voornaam</th>
+      <th scope="col">Achternaam</th>
+      <th scope="col">Email</th>
+      <th scope="col">Vakcode</th>
+      <th scope="col">Vaknaam</th>
+      <th scope="col">Motivatie</th>
     </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let verzoek of verzoeken">
+      <td>{{ verzoek.studentnr }}</td>
+      <td>{{ verzoek.voornaam }}</td>
+      <td>{{ verzoek.achternaam }}</td>
+      <td>{{ verzoek.email }}</td>
+      <td>{{ verzoek.vakcode }}</td>
+      <td>{{ verzoek.vaknaam }}</td>
+      <td>{{ verzoek.motivatie }}</td>
+    </tr>
+  </tbody>
 </table>

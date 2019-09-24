@@ -13,6 +13,19 @@ export class VerzoekenOverzichtComponent implements OnInit {
 
   constructor(private verzoekenService: VerzoekenService) {
     this.verzoeken = verzoekenService.getAllVerzoeken();
+
+    // simulatie dat er elders in de app een nieuw verzoek was ingediend.
+    this.verzoekenService.addVerzoek(
+      new Verzoek(
+        321,
+        'Sinter',
+        'Klaas',
+        'sinter.klaas@student.hu.nl',
+        'TCIT-VKFEP',
+        'Front-End Programming',
+        'was vergeten me in te schrijven'
+      )
+    );
   }
 
   ngOnInit() {
