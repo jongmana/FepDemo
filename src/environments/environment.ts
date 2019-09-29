@@ -5,12 +5,14 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: '<your-key>',
-    authDomain: '<your-project-authdomain>',
-    databaseURL: '<your-database-URL>',
-    projectId: '<your-project-id>',
-    storageBucket: '<your-storage-bucket>',
-    messagingSenderId: '<your-messaging-sender-id>'
+    apiKey: "AIzaSyDwAu5GaYAHOZrYe1_FmzzFmVU6XNYD72g",
+    authDomain: "fepdemo.firebaseapp.com",
+    databaseURL: "https://fepdemo.firebaseio.com",
+    projectId: "fepdemo",
+    storageBucket: "",
+    messagingSenderId: "123537298249",
+    appId: "1:123537298249:web:b6aec6f56b99d093aa8098",
+    measurementId: "G-VP43E6D682"
   }
 };
 
