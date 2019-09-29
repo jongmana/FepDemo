@@ -1,0 +1,31 @@
+<form (ngSubmit)="onSubmit()">
+    <label for="studentnr"><span>Studenten Nummer:</span>
+        <input type="text" name="studentnr" required [(ngModel)]="verzoekform.studentnr">
+    </label>
+
+    <label for="voornaam"><span>Voornaam:</span>
+        <input type="voornaam" name="voornaam" required [(ngModel)]="verzoekform.voornaam">
+    </label>
+
+    <label for="achternaam"><span>Achternaam:</span>
+        <input type="achternaam" name="achternaam" required [(ngModel)]="verzoekform.achternaam">
+    </label>
+
+    <label for="email"><span>Email:</span>
+        <input type="email" name="email" required [(ngModel)]="verzoekform.email">
+    </label>
+
+    <label for="vakcode"><span>Vakcode:</span>
+        <input type="vakcode" name="vakcode" required [(ngModel)]="verzoekform.vakcode">
+    </label>
+
+    <label for="vaknaam"><span>Vaknaam:</span>
+        <input type="vaknaam" name="vaknaam" required [(ngModel)]="verzoekform.vaknaam">
+    </label>
+
+    <label for="motivatie"><span>Motivatie:</span>
+        <input type="motivatie" name="motivatie" required [(ngModel)]="verzoekform.motivatie">
+    </label>
+
+    <button type="submit">Verstuur</button>
+</form>

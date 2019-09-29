@@ -24,20 +24,6 @@ export class VerzoekenOverzichtComponent implements OnInit, OnDestroy {
         this.verzoeken = verzoeken;
       }
     );
-
-
-    // simulatie dat er elders in de app een nieuw verzoek was ingediend.
-    this.verzoekenService.addVerzoek(
-      new Verzoek(
-        321,
-        'Sinter',
-        'Klaas',
-        'sinter.klaas@student.hu.nl',
-        'TCIT-VKFEP',
-        'Front-End Programming',
-        'was vergeten me in te schrijven'
-      )
-    );
   }
 
   ngOnDestroy() {

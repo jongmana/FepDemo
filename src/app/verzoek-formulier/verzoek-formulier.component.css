@@ -1,0 +1,7 @@
+label {
+    display: block;
+}
+label > span {
+    width: 180px;
+    float: left;
+}
