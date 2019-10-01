@@ -1,27 +1,21 @@
 # FepDemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
+**Versies**
 
-## Development server
+## master - Initiel Angular Project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Versie1 - Model <-> Service <-> Component 
+overzicht van verzoeken toegevoegd, waarbij de verzoeken in de lijst gebaseerd zijn op de model klasse Verzoek en de verzoeken zelf aangeleverd worden via de gerelateerde service klasse.
 
-## Code scaffolding
+## Versie2 - Observables 
+In principe zelfde optische werking dan Versie1, maar nu op basis van Observables, zodat de applicatie overweg kan met wijzigingen in de data.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Versie3 - Forms
+Er is een formulier voor het indienen van nieuwe verzoeken toegevoegd
 
-## Build
+## Versie4 - Routing
+Het overzicht van de verzoeken en het formulier voor het indienen van verzoeken zijn nu twee afzonderlijke paginas geworden, en er is een menu toegevoegd. Kortom er is routering aan de applicatie toegevoegd.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Versie5 - Firebase authentication
+Er is een login/logout pagina toegevoegd zodat een gebruiker met een google accout kan in-/uitloggen.
+Verder is de routering voor de pagina verzoek indienen alleen beschikbaar als de gebruiker is ingelogged.
